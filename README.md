@@ -18,6 +18,20 @@ npm run setup
 ```bash
 node app.js
 ```
+## Maintenance
+Update nodejs
+```
+apt-get update nodejs
+```
+Update npm
+```
+npm update npm -g
+```
+Update ws server
+```
+git pull --rebase
+systemctl restart ws_server
+```
 ## Run as Service
 Create `ws_server.service` file with the following content:
 ```bash
